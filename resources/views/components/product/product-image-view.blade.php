@@ -68,7 +68,7 @@
 
             if (lastHoveredButton) {
                 lastHoveredButton.classList.remove('border-2');
-                lastHoveredButton.classList.remove('border-green-500');
+                lastHoveredButton.classList.remove('border-indigo-500');
             }
 
             button.click();
@@ -78,7 +78,7 @@
             });
             button.setAttribute('aria-current', 'true');
 
-            button.classList.add('border-2', 'border-green-500');
+            button.classList.add('border-2', 'border-indigo-500');
             lastHoveredButton = button;
 
             const carouselItem = carousel.querySelector('[data-carousel-item]:nth-child(' + (index + 1) + ')');
@@ -89,7 +89,7 @@
 
     if (buttons.length === 1) {
         buttons[0].setAttribute('aria-current', 'true');
-        buttons[0].classList.add('border-2', 'border-green-500');
+        buttons[0].classList.add('border-2', 'border-indigo-500');
         document.getElementsByClassName("image-view")[0].classList.remove("hidden");
         document.getElementsByClassName("image-view")[0].classList.remove("translate-x-full");
         document.getElementsByClassName("image-view")[0].classList.add("translate-x-0");

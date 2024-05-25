@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <button
-                    class="h-fit w-24 py-1 rounded-md font-semibold text-green-600 border-green-600 border-[1px] flex-shrink-0">
+                    class="h-fit w-24 py-1 rounded-md font-semibold text-indigo-600 border-indigo-600 border-[1px] flex-shrink-0">
                     View Shop
                 </button>
             </div>

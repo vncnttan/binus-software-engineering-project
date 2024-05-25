@@ -4,8 +4,8 @@
 
 @section('content')
     <div class="w-full flex border-b-[1px]">
-        <a class="text-green-500 p-4 font-mandala text-3xl mx-auto relative w-full" href="/"
-           style="max-width: 1080px;">TokoNJedia</a>
+        <a class="text-indigo-500 p-4 font-mandala text-3xl mx-auto relative w-full" href="/"
+           style="max-width: 1080px;">BEEThrift</a>
     </div>
     <div class="flex flex-col md:flex-row gap-12 mx-auto px-4 py-10 md:min-w-[1024px]" style="max-width: 1080px;">
         <div class="relative flex flex-col gap-4 flex-grow">
@@ -65,7 +65,7 @@
                                 Choose Duration
                             </label>
                             <select id="duration"
-                                    class="durationSelect border-r-8 bg-green-600 w-full border border-green-600 text-white font-semibold text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block py-2 px-2.5"
+                                    class="durationSelect border-r-8 bg-indigo-600 w-full border border-indigo-600 text-white font-semibold text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block py-2 px-2.5"
                                     data-cart-id="{{ $cart->product->id }}"
                                     data-merchant-lat="{{ $cart->product->merchant->location[0]->latitude }}"
                                     data-merchant-long="{{$cart->product->merchant->location[0]->longitude}}"
@@ -122,11 +122,11 @@
                 </div>
 
                 <div class="text-gray-500 text-sm">
-                    By purchasing products from tokoNJedia, I agree to the
-                    <a href="https://www.tokopedia.com/terms" class="text-green-500">terms and conditions</a>
+                    By purchasing products from BEEThrift, I agree to the
+                    <a href="https://www.tokopedia.com/terms" class="text-indigo-500">terms and conditions</a>
                 </div>
 
-                <button class="bg-green-600 py-2 text-white font-bold rounded-md" onclick="proceedTransaction()">
+                <button class="bg-indigo-600 py-2 text-white font-bold rounded-md" onclick="proceedTransaction()">
                     Proceed Transaction
                 </button>
             </div>

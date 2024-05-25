@@ -12,7 +12,7 @@
         </div>
         <a class="w-full" href="/">
             <button
-                class="w-fit h-fit py-3 px-6 rounded-lg text-sm font-semibold text-white bg-green-600">
+                class="w-fit h-fit py-3 px-6 rounded-lg text-sm font-semibold text-white bg-indigo-600">
                 Go back home
             </button>
         </a>

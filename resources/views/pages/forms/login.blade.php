@@ -5,9 +5,9 @@
 @section('content')
     <div class="h-screen w-full py-10 flex flex-col justify-between items-center box-border" id="login-full-screen">
         <div class="w-full sm:block hidden">
-            <div class="flex justify-center items-center text-5xl text-green-500 font-semibold">
+            <div class="flex justify-center items-center text-5xl text-indigo-500 font-semibold">
                 <a href="/">
-                    <h1 class="font-mandala">tokoNJedia</h1>
+                    <h1 class="font-mandala">BEEThrift</h1>
                 </a>
             </div>
         </div>
@@ -20,7 +20,7 @@
                         <h1 class="text-2xl font-bold">Welcome Back!</h1>
                         <div class="w-full flex justify-center items-center text-base gap-1 bg-red">
                             <h1>Don't have an account?</h1>
-                            <a class="text-green-500 cursor-pointer font-medium" href="/register">Register</a>
+                            <a class="text-indigo-500 cursor-pointer font-medium" href="/register">Register</a>
                         </div>
                     </div>
                     <div class="w-full h-full flex flex-col justify-start items-center gap-4">
@@ -38,7 +38,7 @@
                         <form action="/login" method="POST" class="w-full h-full text-sm flex flex-col gap-1">
                             @csrf
                             <label for="emailInput">Email</label>
-                            <input type="text" name="email" id="emailInput" class="input-style" placeholder="Example: email@tokonjedia.com">
+                            <input type="text" name="email" id="emailInput" class="input-style" placeholder="Example: email@BEEThrift.com">
                             <label for="passwordInput">Password</label>
                             <input type="password" name="password" id="passwordInput" class="input-style" placeholder="Input password">
                             <p class="text-gray-400">Requirements:</p>
@@ -48,7 +48,7 @@
                                     {{ $errors->first() }}
                                 </p>
                             @endif
-                            <button class="w-full p-2 my-4 bg-green-500 rounded-lg text-white text-xl font-bold">
+                            <button class="w-full p-2 my-4 bg-indigo-500 rounded-lg text-white text-xl font-bold">
                                 Login
                             </button>
                         </form>
@@ -58,7 +58,7 @@
         </div>
         <div class="w-full sm:block hidden">
             <div class="w-full flex justify-center items-center">
-                <span class="text-green-500 font-semibold text-center px-20">&copy; DuTiSa, Breaking and Overcoming
+                <span class="text-indigo-500 font-semibold text-center px-20">&copy; DuTiSa, Breaking and Overcoming
                     Challenges Through Courage, Hardwork, and Persistence</span>
             </div>
         </div>
@@ -66,9 +66,9 @@
 
     <style>
         #login-full-screen {
-            background-image: url('{{ asset('assets/backgrounds/login-bg.png') }}');
+            background-image: url('https://i.pinimg.com/736x/d6/37/8f/d6378f56591c50040a214a4f88940961.jpg');
             background-position: center;
-            background-size: min(80vw, 80vh);
+            background-size: 60vh;
             background-repeat: no-repeat;
         }
     </style>

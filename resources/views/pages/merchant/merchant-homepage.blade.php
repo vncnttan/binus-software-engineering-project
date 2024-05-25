@@ -10,7 +10,7 @@
             <div class="w-full h-10 flex flex-row border-b-[1px] border-gray-400 border-opacity-30">
                 <button
                     id="product-button"
-                    class="flex flex-row gap-2 text-green-600 border-green-700 w-24 justify-center font-bold border-b-2">
+                    class="flex flex-row gap-2 text-indigo-600 border-indigo-700 w-24 justify-center font-bold border-b-2">
                     Home
                 </button>
                 <a href="/merchant/{{$merchant->id}}/products">

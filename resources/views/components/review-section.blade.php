@@ -117,7 +117,7 @@
                                             <div class="font-semibold ml-2">
                                                 {{ $merchant->name ?? 'Admin' }}
                                             </div>
-                                            <div class="bg-green-200 p-0.5 text-green-700 text-xs font-semibold">
+                                            <div class="bg-indigo-200 p-0.5 text-indigo-700 text-xs font-semibold">
                                                 Seller
                                             </div>
                                             <div class="text-sm">

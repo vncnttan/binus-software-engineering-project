@@ -24,7 +24,7 @@
                     </div>
 
                     <a href="/cart">
-                        <button class="bg-green-600 py-2 px-16 rounded-md text-white font-bold">
+                        <button class="bg-indigo-600 py-2 px-16 rounded-md text-white font-bold">
                             Shop Now
                         </button>
                     </a>
@@ -53,7 +53,7 @@
                                     {{ $t->status == 'Pending' ? 'bg-amber-300 text-amber-600' : '' }}
                                     {{ $t->status == 'Shipping' ? 'bg-blue-300 text-blue-600' : '' }}
                                     {{ $t->status == 'Rejected' ? 'bg-red-300 text-red-600' : '' }}
-                                    {{ $t->status == 'Completed' ? 'bg-green-300 text-green-600' : '' }}
+                                    {{ $t->status == 'Completed' ? 'bg-indigo-300 text-indigo-600' : '' }}
                                      px-2 rounded-sm">
                                 {{ $t->status }}
                             </div>
@@ -111,7 +111,7 @@
                         <div class="w-full text-end">
                             @if($t->status == 'Pending')
                                 <a href="/chat/{{ $t->product->merchant->id }}"
-                                   class="bg-green-600 hover:bg-green-700 py-2 px-12 text-white rounded-md font-bold">
+                                   class="bg-indigo-600 hover:bg-indigo-700 py-2 px-12 text-white rounded-md font-bold">
                                     Chat Seller
                                 </a>
                             @elseif($t->status == 'Shipping')
@@ -119,7 +119,7 @@
 
                                 <button
                                     onclick="onConfirmReceived('{{ $t->transactionHeader->id }}', '{{ $t->product->id }}', '{{ $t->productVariant->id }}')"
-                                    class="ml-4 bg-white hover:bg-gray-100 border-[1px] text-green-600 border-green-600 py-2 px-12 rounded-md font-bold">
+                                    class="ml-4 bg-white hover:bg-gray-100 border-[1px] text-indigo-600 border-indigo-600 py-2 px-12 rounded-md font-bold">
                                     Confirm Received
                                 </button>
                             @elseif($t->status == 'Completed')
@@ -127,12 +127,12 @@
                                     @can('review-product', [$t->transactionHeader->id, $t->product->id])
                                         <a
                                             href="/review/{{ $t->transactionHeader->id }}/{{ $t->product->id }}"
-                                            class="ml-4 bg-white hover:bg-gray-100 border-[1px] text-green-600 border-green-600 py-2 px-12 rounded-md font-bold">
+                                            class="ml-4 bg-white hover:bg-gray-100 border-[1px] text-indigo-600 border-indigo-600 py-2 px-12 rounded-md font-bold">
                                             Give Reviews
                                         </a>
                                     @endcan
                                     <a href="/product-detail/{{ $t->product->id }}"
-                                       class="bg-green-600 hover:bg-green-700 py-2 px-12 text-white rounded-md font-bold">
+                                       class="bg-indigo-600 hover:bg-indigo-700 py-2 px-12 text-white rounded-md font-bold">
                                         Buy Again
                                     </a>
                                 </div>
@@ -159,7 +159,7 @@
                                 {{ $t->transactionHeader->created_at->format('H:i') }}
                             </div>
                             <div
-                                class="bg-green-300 text-green-600 px-2 rounded-sm">
+                                class="bg-indigo-300 text-indigo-600 px-2 rounded-sm">
                                 Completed
                             </div>
 

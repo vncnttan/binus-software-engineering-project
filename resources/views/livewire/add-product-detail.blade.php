@@ -19,12 +19,12 @@
         </div>
         <div class="w-full justify-start flex gap-4 md:gap-10">
             <label class="radio-label flex items-center gap-1 md:gap-2 text-base md:text-lg" for="conditionNew">
-                <input id="conditionNew" class="md:w-6 md:h-6 w-3 h-3 checked:text-green-500  text-green-500" name="condition" value="New"
+                <input id="conditionNew" class="md:w-6 md:h-6 w-3 h-3 checked:text-indigo-500  text-indigo-500" name="condition" value="New"
                        type="radio">
                 New
             </label>
             <label class="radio-label flex items-center gap-1 md:gap-2 text-base md:text-lg" for="conditionUsed">
-                <input id="conditionUsed" class="md:w-6 md:h-6 w-3 h-3 bg-green-500 checked:bg-green-500 text-green-500" name="condition" value="Used"
+                <input id="conditionUsed" class="md:w-6 md:h-6 w-3 h-3 bg-indigo-500 checked:bg-indigo-500 text-indigo-500" name="condition" value="Used"
                        type="radio">
                 Used
             </label>

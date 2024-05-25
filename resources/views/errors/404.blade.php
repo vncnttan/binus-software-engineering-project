@@ -9,7 +9,7 @@
             <h2 class="text-black font-bold text-4xl">Wadoeh, your destination is not found!</h2>
             <h4 class="text-gray-500 font-semibold">Maybe there is a typo? Let's go back before dark!</h4>
         </div>
-        <a href="/" class="px-4 py-2 font-bold bg-green-600 rounded-md w-fit text-white ">
+        <a href="/" class="px-4 py-2 font-bold bg-indigo-600 rounded-md w-fit text-white ">
             Go back to home
         </a>
     </div>

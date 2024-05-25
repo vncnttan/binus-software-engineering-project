@@ -13,6 +13,6 @@
             </label>
         </div>
         <button
-            class="w-full text-xl text-white font-semibold   bg-green-500 rounded-lg flex justify-center p-2 box-border">Save</button>
+            class="w-full text-xl text-white font-semibold   bg-indigo-500 rounded-lg flex justify-center p-2 box-border">Save</button>
     </form>
 </div>

@@ -7,11 +7,11 @@
 
             <div class="px-[15%] grid grid-cols-2 text-xs text-center gap-0.5">
                 <div id="progress-indicator1"
-                     class="p-1 font-bold w-7 h-7 text-green-600 border-green-600 rounded-full border-[1px] mx-auto">
+                     class="p-1 font-bold w-7 h-7 text-indigo-600 border-indigo-600 rounded-full border-[1px] mx-auto">
                     1
                 </div>
                 <div id="progress-indicator2"
-                     class="p-1 font-bold w-7 h-7 text-green-600 border-green-600 rounded-full border-[1px] mx-auto">
+                     class="p-1 font-bold w-7 h-7 text-indigo-600 border-indigo-600 rounded-full border-[1px] mx-auto">
                     2
                 </div>
                 <div> Pinpoint Location</div>
@@ -39,7 +39,7 @@
                 }
                 console.log(window.latitude, window.longitude)
                 updateProgress(event, 1)
-            " class="py-2 font-semibold bg-green-500 rounded-md text-white">
+            " class="py-2 font-semibold bg-indigo-500 rounded-md text-white">
                 Confirm Location
             </button>
         </div>
@@ -83,7 +83,7 @@
             <div id="error-message" class="bg-red-500 text-white w-full p-5 rounded-md hidden"></div>
             <button onclick="
                 addLocation()
-            " class="py-2 bg-green-500 rounded-md text-white font-bold">Add New Address
+            " class="py-2 bg-indigo-500 rounded-md text-white font-bold">Add New Address
             </button>
         </div>
     </div>
@@ -108,14 +108,14 @@
 
         window.updateUI = function () {
             if (progress === 0) {
-                updateClasses("progress-indicator1", ["ring-green-500"], []);
+                updateClasses("progress-indicator1", ["ring-indigo-500"], []);
                 updateClasses("progress-indicator2", ["text-white", "bg-gray-300"], ["ring-1"]);
                 updateClasses("form-content1", [], ["hidden"]);
                 updateClasses("form-content2", ["hidden"], []);
             } else if (progress === 1) {
-                updateClasses("progress-indicator1", ["bg-green-600", "text-white"], []);
+                updateClasses("progress-indicator1", ["bg-indigo-600", "text-white"], []);
                 updateSVG("progress-indicator1", svg);
-                updateClasses("progress-indicator2", ["ring-green-500", "bg-white", "text-green-600"], ["bg-gray-300", 'text-white']);
+                updateClasses("progress-indicator2", ["ring-indigo-500", "bg-white", "text-indigo-600"], ["bg-gray-300", 'text-white']);
                 updateClasses("form-content1", ["hidden"], []);
                 updateClasses("form-content2", [], ["hidden"]);
             }

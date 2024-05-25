@@ -10,7 +10,7 @@
 
     <div class="flex-grow w-full rounded-lg border-[1px] border-gray-200 bg-white">
         <div class="w-full h-full p-8 box-border flex flex-col justify-start items-start gap-8">
-            <div class="ml-auto rounded-lg bg-green-600">
+            <div class="ml-auto rounded-lg bg-indigo-600">
                 <button class="px-3.5 py-2 text-white font-bold"
                         onclick="Livewire.emit('openModal', 'add-location-modal')">
                     + Add New Address
@@ -19,9 +19,9 @@
             @foreach($user->location as $loc)
                 <div class="w-full min-h-44">
                     <div
-                        class=" {{ $loop->index == 0 ? 'border-green-600 bg-green-50' : ''}} border-[1px] rounded-lg h-full w-full flex flex-col py-5 px-6 justify-between relative">
+                        class=" {{ $loop->index == 0 ? 'border-indigo-600 bg-indigo-50' : ''}} border-[1px] rounded-lg h-full w-full flex flex-col py-5 px-6 justify-between relative">
                         <div
-                            class="{{ $loop->index == 0 ? 'bg-green-500' : 'bg-gray-500'}} w-1.5 h-12 rounded-br-md rounded-tr-md absolute left-0"></div>
+                            class="{{ $loop->index == 0 ? 'bg-indigo-500' : 'bg-gray-500'}} w-1.5 h-12 rounded-br-md rounded-tr-md absolute left-0"></div>
                         <div class="flex flex-col">
                             <div class="font-bold">
                                 {{ $user->username }}
@@ -36,7 +36,7 @@
                                 {{ $loc->notes }}
                             </div>
                         </div>
-                        <button class="text-sm font-bold text-green-600 w-fit" onclick="deleteItem('{{ $loc->id }}')">
+                        <button class="text-sm font-bold text-indigo-600 w-fit" onclick="deleteItem('{{ $loc->id }}')">
                             Delete
                         </button>
                     </div>

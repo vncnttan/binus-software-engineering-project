@@ -1,7 +1,7 @@
 <div class="w-full flex flex-wrap justify-between gap-4">
     @foreach ($videos as $index => $video)
         <label
-            class="relative group w-24 md:w-36 h-24 md:h-36 border-2 border-dashed rounded-lg text-sm font-semibold cursor-pointer flex flex-col justify-center items-center text-gray-500 hover:text-green-500 hover:border-green-500">
+            class="relative group w-24 md:w-36 h-24 md:h-36 border-2 border-dashed rounded-lg text-sm font-semibold cursor-pointer flex flex-col justify-center items-center text-gray-500 hover:text-indigo-500 hover:border-indigo-500">
             <input wire:model="videos.{{ $index }}" name="videos[{{ $index }}]" type="file"
                    accept="video/mp4" class="hidden">
             @if ($video)

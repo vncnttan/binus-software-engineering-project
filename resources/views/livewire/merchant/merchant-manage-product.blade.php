@@ -4,14 +4,14 @@
     <div class="w-full flex justify-between items-center">
         <h1 class="text-2xl font-bold text-black">Product List</h1>
         <div>
-            <a class="text-white font-bold bg-green-600 hover:bg-green-700 py-2 px-6 rounded-md"
+            <a class="text-white font-bold bg-indigo-600 hover:bg-indigo-700 py-2 px-6 rounded-md"
                href="/merchant/add-product">+ Add Product</a>
         </div>
     </div>
     <div
         class="w-full min-h-[500px] bg-white flex-grow shadow-container rounded-lg flex flex-col justify-start items-center">
         <div class="w-full box-border border-b-2 border-gray-100">
-            <h1 class="text-green-500 text-xl font-bold border-b-2 border-green-500 w-fit py-2 px-6 box-border">All
+            <h1 class="text-indigo-500 text-xl font-bold border-b-2 border-indigo-500 w-fit py-2 px-6 box-border">All
                 Products</h1>
         </div>
         <div class="w-full p-4 box-border flex justify-between items-center border-b-2 border-gray-100">

@@ -7,33 +7,33 @@
                         <path
                             d="M16 64C16 28.7 44.7 0 80 0H304c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64V64zM224 448a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM304 64H80V384H304V64z"/>
                     </svg>
-                    Download Tokonjedia App
+                    Download BEEThrift App
                 </div>
 
                 <div class="flex-row flex lg:gap-8 gap-4 text-xs invisible md:visible">
-                    <a class="hover:text-green-600" href="https://www.tokopedia.com/about/" target="_blank">
+                    <a class="hover:text-indigo-600" href="https://www.tokopedia.com/about/" target="_blank">
                         <button class="whitespace-nowrap overflow-ellipsis">
-                            Tentang Tokonjedia
+                            Tentang BeeThrift
                         </button>
                     </a>
-                    <a class="hover:text-green-600" href="https://www.tokopedia.com/mitra" target="_blank">
+                    <a class="hover:text-indigo-600" href="https://www.tokopedia.com/mitra" target="_blank">
                         <button class="whitespace-nowrap overflow-ellipsis">
-                            Mitra Tokonjedia
+                            Mitra BEEThrift
                         </button>
                     </a>
-                    <a href="merchant/create" class="hover:text-green-600">
+                    <a href="merchant/create" class="hover:text-indigo-600">
                         <button class="whitespace-nowrap overflow-ellipsis">
                             Mulai Berjualan
                         </button>
                     </a>
-                    <a class="hover:text-green-600" href="https://www.tokopedia.com/discovery/deals" target="_blank">
+                    <a class="hover:text-indigo-600" href="https://www.tokopedia.com/discovery/deals" target="_blank">
                         <button class="whitespace-nowrap overflow-ellipsis">
                             Promo
                         </button>
                     </a>
-                    <a class="hover:text-green-600" href="https://www.tokopedia.com/help/" target="_blank">
+                    <a class="hover:text-indigo-600" href="https://www.tokopedia.com/help/" target="_blank">
                         <button class="whitespace-nowrap overflow-ellipsis">
-                            TokoNJedia Care
+                            BEEThrift Care
                         </button>
                     </a>
 
@@ -45,11 +45,11 @@
                 <div class="h-full flex justify-center items-center">
                     @if($merchantPage)
                         <div class="flex flex-row gap-2 place-items-end">
-                            <a class="text-green-500 font-semibold font-mandala text-3xl"
-                               href="/merchant">TokoNJedia</a> Seller
+                            <a class="text-indigo-500 font-semibold font-mandala text-3xl"
+                               href="/merchant">BEEThrift</a> Seller
                         </div>
                     @else
-                        <a class="text-green-500 font-semibold font-mandala text-3xl" href="/">TokoNJedia</a>
+                        <a class="text-indigo-500 font-semibold font-mandala text-3xl" href="/">BEEThrift</a>
                     @endif
                 </div>
                 <div class="w-full h-full hidden md:flex justify-between items-center gap-4">
@@ -119,12 +119,12 @@
                     @endauth
                     @guest
                         <a href="/login">
-                            <button class="border-[1px] border-green-600 px-4 py-1 rounded-md text-green-600">Login
+                            <button class="border-[1px] border-indigo-600 px-4 py-1 rounded-md text-indigo-600">Login
                             </button>
                         </a>
                         <a href="/register">
                             <button
-                                class="bg-green-600 px-4 py-1 border-[1px] border-green-600 rounded-md text-white font-semibold">
+                                class="bg-indigo-600 px-4 py-1 border-[1px] border-indigo-600 rounded-md text-white font-semibold">
                                 Register
                             </button>
                         </a>
@@ -134,7 +134,7 @@
             <div
                 class="w-full py-1 h-full xl:pl-72 lg:px-12 hidden md:flex text-gray-500 lg:text-sm text-xs flex-row gap-4">
                 @foreach($product_names as $product_name)
-                    <div class="hover:text-green-600 overflow-hidden space-x-0.5 h-5">
+                    <div class="hover:text-indigo-600 overflow-hidden space-x-0.5 h-5">
                         <a href="/search-page/{{ $product_name }}">
                             {{ $product_name }}
                         </a>

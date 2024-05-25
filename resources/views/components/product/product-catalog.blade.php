@@ -51,7 +51,7 @@
                     @foreach($product->productVariants as $index => $variant)
                         <button
                             id="variant_{{ $variant->id }}"
-                            class="variant-button {{ $index === 0 ? 'active' : '' }} py-2 px-4 rounded-2xl border-[1px] text-gray-500 hover:text-green-600 hover:border-green-600"
+                            class="variant-button {{ $index === 0 ? 'active' : '' }} py-2 px-4 rounded-2xl border-[1px] text-gray-500 hover:text-indigo-600 hover:border-indigo-600"
                             onclick="updateVariantDisplay('{{ $variant->id }}', '{{ $variant->name }}', '{{ $variant->price }}', this, '{{ $variant->stock }}')">
                             {{ $variant->name }}
                         </button>
@@ -60,7 +60,7 @@
             </div>
             <div class="border-gray-50 pb-2 border-b-2">
                 <div class="font-bold border-b-2 border-gray-50">
-                    <div class="py-3 px-6 text-green-500 border-b-2 border-green-500 w-fit">
+                    <div class="py-3 px-6 text-indigo-500 border-b-2 border-indigo-500 w-fit">
                         Detail
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                                 @csrf
                                 <input type="hidden" name="merchant_id" value="{{ $product->merchant->id }}">
                                 <button type="submit"
-                                    class="text-green-500 py-0.5 px-4 mt-2 w-fit border-2 font-semibold rounded-md border-green-400">
+                                    class="text-indigo-500 py-0.5 px-4 mt-2 w-fit border-2 font-semibold rounded-md border-indigo-400">
                                     @if($following)
                                         <div class="flex flex-row gap-1 place-items-center justify-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-4">
@@ -122,7 +122,7 @@
                     <div class="flex flex-row gap-4 place-items-center">
                         <div
                             class="border-[1px] px-3 py-1 flex flex-row place-items-center gap-4 rounded-md border-gray-200">
-                            <button id="subtract_btn" class="disabled:text-gray-500 text-green-600"
+                            <button id="subtract_btn" class="disabled:text-gray-500 text-indigo-600"
                                     onclick="subtractQuantity()">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                      stroke-width="1.5"
@@ -131,7 +131,7 @@
                                 </svg>
                             </button>
                             <span id="quantityDisplay"></span>
-                            <button id="add_btn" class="disabled:text-gray-500 text-green-600" onclick="addQuantity()">
+                            <button id="add_btn" class="disabled:text-gray-500 text-indigo-600" onclick="addQuantity()">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                      stroke-width="1.5"
                                      stroke="currentColor" class="w-4 h-4">
@@ -161,14 +161,14 @@
                     <div class="py-3 flex flex-col gap-2">
                         <button
                             id="addToCartBtn"
-                            class="w-full py-2 rounded-md bg-green-500 hover:bg-green-600 text-white font-bold disabled:bg-gray-500 disabled:text-gray-300 disabled:cursor-not-allowed disabled:opacity-80"
+                            class="w-full py-2 rounded-md bg-indigo-500 hover:bg-indigo-600 text-white font-bold disabled:bg-gray-500 disabled:text-gray-300 disabled:cursor-not-allowed disabled:opacity-80"
                             onclick="addToCart()">
                             + Add to Cart
                         </button>
                         <button
                             id="buyNowBtn"
                             onclick="buyNow()"
-                            class="w-full py-2 rounded-md border-2 border-green-500 text-green-500 font-bold  disabled:border-gray-200 disabled:text-gray-500 disabled:cursor-not-allowed disabled:opacity-80">
+                            class="w-full py-2 rounded-md border-2 border-indigo-500 text-indigo-500 font-bold  disabled:border-gray-200 disabled:text-gray-500 disabled:cursor-not-allowed disabled:opacity-80">
                             Buy Now
                         </button>
                     </div>
@@ -335,9 +335,9 @@
         }
 
         document.querySelectorAll('.variant-button').forEach(button => {
-            button.classList.toggle('border-green-600', button === clickedBtn);
-            button.classList.toggle('text-green-600', button === clickedBtn);
-            button.classList.toggle('bg-green-100', button === clickedBtn);
+            button.classList.toggle('border-indigo-600', button === clickedBtn);
+            button.classList.toggle('text-indigo-600', button === clickedBtn);
+            button.classList.toggle('bg-indigo-100', button === clickedBtn);
             button.classList.toggle('border-gray-500', button !== clickedBtn);
             button.classList.toggle('text-gray-500', button !== clickedBtn);
             button.classList.toggle('active', button === clickedBtn);

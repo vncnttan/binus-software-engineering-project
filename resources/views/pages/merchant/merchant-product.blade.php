@@ -16,7 +16,7 @@
                 </a>
                 <button
                     id="store-button"
-                    class="flex flex-row gap-2 text-green-600  border-green-700 border-b-2  w-24 justify-center font-bold">
+                    class="flex flex-row gap-2 text-indigo-600  border-indigo-700 border-b-2  w-24 justify-center font-bold">
                     Product
                 </button>
             </div>

@@ -2,7 +2,7 @@
      x-data="{ showDropdown: false }">
     <div class=" h-full  flex flex-col justify-start items-center text-lg font-semibold ">
         <a href="/merchant"
-           class="w-full flex gap-4 justify-start items-center hover:bg-slate-100 px-6 py-2 box-border cursor-pointer hover:text-black hover:font-bold {{ request()->route()->getName() == "merchant-dashboard" ? '!text-green-500' : 'text-gray-600' }}"
+           class="w-full flex gap-4 justify-start items-center hover:bg-slate-100 px-6 py-2 box-border cursor-pointer hover:text-black hover:font-bold {{ request()->route()->getName() == "merchant-dashboard" ? '!text-indigo-500' : 'text-gray-600' }}"
            @click="selectedTab = 'notProduct';">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                  stroke="currentColor" class="w-6 h-5">
@@ -13,7 +13,7 @@
         </a>
 
         <a href="/merchant/chat"
-           class="w-full flex gap-4 justify-start items-center hover:bg-slate-100 px-6 py-2 box-border cursor-pointer hover:text-black hover:font-bold {{ request()->route()->getName() == "merchant-chat" ? '!text-green-500' : 'text-gray-600' }}"
+           class="w-full flex gap-4 justify-start items-center hover:bg-slate-100 px-6 py-2 box-border cursor-pointer hover:text-black hover:font-bold {{ request()->route()->getName() == "merchant-chat" ? '!text-indigo-500' : 'text-gray-600' }}"
            @click="selectedTab = 'notProduct';">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                  stroke="currentColor" class="w-6 h-5">
@@ -23,7 +23,7 @@
             <h1>Chat</h1>
         </a>
         <a href="/merchant/transactions"
-           class="w-full flex gap-4 justify-start items-center hover:bg-slate-100 px-6 py-2 box-border cursor-pointer hover:text-black hover:font-bold {{ request()->route()->getName() == "merchant-transaction" ? '!text-green-500' : 'text-gray-600' }}"
+           class="w-full flex gap-4 justify-start items-center hover:bg-slate-100 px-6 py-2 box-border cursor-pointer hover:text-black hover:font-bold {{ request()->route()->getName() == "merchant-transaction" ? '!text-indigo-500' : 'text-gray-600' }}"
            @click="selectedTab = 'notProduct';">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                  stroke="currentColor" class="w-6 h-5">
@@ -34,7 +34,7 @@
         </a>
         <a href="/merchant/profile"
            class="w-full flex gap-4 justify-start items-center hover:bg-slate-100 px-6 py-2 box-border cursor-pointer hover:text-black hover:font-bold
-           {{ request()->route()->getName() == "merchant-profile" ? '!text-green-500' : 'text-gray-600' }}"
+           {{ request()->route()->getName() == "merchant-profile" ? '!text-indigo-500' : 'text-gray-600' }}"
            @click="selectedTab = 'notProduct';">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-5 h-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Zm6-10.125a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm1.294 6.336a6.721 6.721 0 0 1-3.17.789 6.721 6.721 0 0 1-3.168-.789 3.376 3.376 0 0 1 6.338 0Z" />
@@ -43,7 +43,7 @@
         </a>
         <a class="z-10 w-full flex gap-4 justify-start items-center hover:bg-slate-100 px-6 py-2 box-border cursor-pointer hover:text-black hover:font-bold"
            @click="selectedTab = 'product'; showDropdown = !showDropdown"
-           :class="{ '!text-green-500': showDropdown, 'text-gray-600': showDropdown }">
+           :class="{ '!text-indigo-500': showDropdown, 'text-gray-600': showDropdown }">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                  stroke="currentColor" class="w-5 h-5">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -77,7 +77,7 @@
                 <div class="pl-4">
                     <a href="/merchant/manage-product" @click="selectedTab = 'product';"
                        class="block w-full pl-6 rounded-l-md py-2 hover:bg-slate-100 cursor-pointer hover:text-black hover:font-bold
-                       {{ request()->route()->getName() == "merchant-manage-product" ? '!text-green-500' : 'text-gray-600' }}
+                       {{ request()->route()->getName() == "merchant-manage-product" ? '!text-indigo-500' : 'text-gray-600' }}
                        ">Product
                         List</a>
                 </div>

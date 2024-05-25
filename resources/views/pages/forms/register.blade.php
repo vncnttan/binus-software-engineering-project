@@ -5,9 +5,9 @@
 @section('content')
     <div class="h-screen w-screen flex flex-col py-10 justify-between items-center bg-white">
         <div class="w-full sm:block hidden">
-            <div class="flex justify-center items-center text-5xl text-green-500 font-semibold">
+            <div class="flex justify-center items-center text-5xl text-indigo-500 font-semibold">
                 <a href="/">
-                    <h1 class="font-mandala">tokoNJedia</h1>
+                    <h1 class="font-mandala">BEEThrift</h1>
                 </a>
             </div>
         </div>
@@ -15,10 +15,11 @@
             <div class="hidden lg:block">
                 <div class="w-full h-full flex flex-col justify-center items-end  text-xl">
                     <div class=" h-full flex flex-col justify-center items-center">
-                        <img class="w-96 h-96 object-contain"
-                             src="https://images.tokopedia.net/img/content/register_new.png"
+                        <img class="w-96 h-96 object-cover rounded-md mb-6"
+                             src="https://i.pinimg.com/736x/94/3e/03/943e0391bdf81e820c20612e7998a48c.jpg"
                              alt="Register Image">
-                        <h1 class="text-2xl font-bold">Agar tidak terputus minimal seratus</h1>
+                        <h1 class="text-xl font-bold">"Be a part of the solution, </h1>
+                        <h4 class="text-sm">not part of the Pollution"</h4>
                     </div>
                 </div>
             </div>
@@ -30,7 +31,7 @@
                         <h1 class="text-2xl font-bold">Register Now</h1>
                         <div class="w-full flex justify-center items-center text-base gap-1 bg-red">
                             <h1>Already have an account?</h1>
-                            <a class="text-green-500 cursor-pointer font-medium" href="/login">Login</a>
+                            <a class="text-indigo-500 cursor-pointer font-medium" href="/login">Login</a>
                         </div>
                     </div>
                     <div class="w-full h-full flex flex-col justify-start items-center gap-4">
@@ -67,7 +68,7 @@
                                     {{ $errors->first() }}
                                 </p>
                             @endif
-                            <button class="w-full p-2 mt-4 bg-green-500 rounded-lg text-white text-xl font-bold">
+                            <button class="w-full p-2 mt-4 bg-indigo-500 rounded-lg text-white text-xl font-bold">
                                 Register
                             </button>
                         </form>
@@ -77,7 +78,7 @@
         </div>
         <div class="w-full sm:block hidden">
             <div class="w-full flex justify-center items-center">
-                <span class="text-green-500 font-semibold text-center px-20">&copy; DuTiSa, Breaking and Overcoming
+                <span class="text-indigo-500 font-semibold text-center px-20">&copy; DuTiSa, Breaking and Overcoming
                     Challenges Through Courage, Hardwork, and Persistence</span>
             </div>
         </div>

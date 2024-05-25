@@ -41,7 +41,7 @@
                     <x-product-card :productId="$product->id" :flashSalePromoId="getFlashSaleProductId($product->id)" />
                 @endforeach
             </div>
-            <div class="hidden md:block absolute bg-green-200 left-0 rounded-xl w-80 h-full"></div>
+            <div class="hidden md:block absolute bg-indigo-200 left-0 rounded-xl w-80 h-full"></div>
         </div>
     </div>
 </div>

@@ -67,7 +67,7 @@
                             <div class="flex flex-row gap-5 border-b-[1px] border-gray-500 border-opacity-10">
                                 <button
                                     {{ $cart->quantity <= 1 ? 'disabled' : '' }} onclick="changeQuantity('{{ $cart->product_id }}', 'subtract', this, {{ $cart->productVariant->stock }})"
-                                    class="disabled:text-gray-700 text-green-600">
+                                    class="disabled:text-gray-700 text-indigo-600">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                          stroke-width="2"
                                          stroke="currentColor" class="w-6 h-6">
@@ -79,7 +79,7 @@
                                 {{ $cart->quantity }}
                             </span>
                                 <button
-                                    {{ $cart->quantity >= $cart->productVariant->stock ? 'disabled' : '' }} class="disabled:text-gray-700 text-green-600"
+                                    {{ $cart->quantity >= $cart->productVariant->stock ? 'disabled' : '' }} class="disabled:text-gray-700 text-indigo-600"
                                     onclick="changeQuantity('{{ $cart->product_id }}', 'add', this, {{ $cart->productVariant->stock }})">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                          stroke-width="2"
@@ -107,7 +107,7 @@
                         </div>
 
                         <a href="/">
-                            <button class="bg-green-600 py-2 px-16 rounded-md text-white font-bold">
+                            <button class="bg-indigo-600 py-2 px-16 rounded-md text-white font-bold">
                                 Shop Now
                             </button>
                         </a>
@@ -133,7 +133,7 @@
                                 <span id="grandTotalPriceDisplay"></span>
                             </div>
                             <a href="/cart/shipment"
-                               class="bg-green-600 hover:bg-green-700 py-2 text-white font-bold rounded-md justify-center text-center">
+                               class="bg-indigo-600 hover:bg-indigo-700 py-2 text-white font-bold rounded-md justify-center text-center">
                                 <button>
                                     Buy
                                 </button>

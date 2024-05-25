@@ -55,7 +55,7 @@
                 wire:click="removeVariant({{ $index }})">Delete</button>
             @endif
         @endforeach
-        <button type="button" class="py-2 px-16 rounded-md bg-white ring-1 ring-green-500 text-green-500 font-semibold"
+        <button type="button" class="py-2 px-16 rounded-md bg-white ring-1 ring-indigo-500 text-indigo-500 font-semibold"
             wire:click="addVariant">+ Add Variant</button>
     </div>
 </div>

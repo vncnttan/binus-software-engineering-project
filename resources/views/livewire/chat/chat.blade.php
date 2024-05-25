@@ -4,7 +4,7 @@
             <img class="w-72 h-72 object-contain" src="{{ url(asset('/assets/chat/chat.png')) }}" alt="">
             <h1 class="text-3xl text-black font-bold">Welcome To Chat</h1>
             <p class="text-md text-gray-700 font-base">Explore to start conversation</p>
-            <a href="/" class="px-4 py-2 font-bold bg-green-600 rounded-md w-fit text-white ">
+            <a href="/" class="px-4 py-2 font-bold bg-indigo-600 rounded-md w-fit text-white ">
                 See store recommendations
             </a>
         </div>

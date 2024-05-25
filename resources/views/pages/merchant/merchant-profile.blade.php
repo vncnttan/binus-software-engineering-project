@@ -97,7 +97,7 @@
                     Discard Changes
                 </a>
                 <button type="submit"
-                        class="!bg-green-500 px-6 py-4 text-white font-semibold rounded-md flex flex-row gap-2 place-items-center">
+                        class="!bg-indigo-500 px-6 py-4 text-white font-semibold rounded-md flex flex-row gap-2 place-items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                          stroke="currentColor" data-slot="icon" class="w-4 h-4">
                         <path stroke-linecap="round" stroke-linejoin="round"

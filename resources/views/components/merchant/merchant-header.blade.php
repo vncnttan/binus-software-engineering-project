@@ -16,7 +16,7 @@
                 <form action="/follow" method="POST">
                     @csrf
                     <input type="hidden" name="merchant_id" value="{{ $merchant->id }}">
-                    <button class="bg-green-600 w-32 py-1.5 rounded-md text-white text-sm font-bold">
+                    <button class="bg-indigo-600 w-32 py-1.5 rounded-md text-white text-sm font-bold">
                         @if($following)
                             <div class="flex flex-row gap-1 place-items-center justify-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-4">
@@ -30,7 +30,7 @@
                     </button>
                 </form>
                 <a href="/chat/{{ $merchant->id }}"
-                   class="border-green-600 text-green-600 border-[1px] w-32 py-1.5 rounded-md text-sm font-bold text-center">
+                   class="border-indigo-600 text-indigo-600 border-[1px] w-32 py-1.5 rounded-md text-sm font-bold text-center">
                     Chat Seller
                 </a>
             </div>

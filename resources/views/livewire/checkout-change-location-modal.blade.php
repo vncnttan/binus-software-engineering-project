@@ -5,7 +5,7 @@
         @foreach($user->location as $loc)
             <div wire:click="selectLocation('{{ $loc->id }}')" class="w-full h-44">
                 <div
-                    class="{{ $loc->id == $selected_location_id ? 'border-green-600 bg-green-50' : 'border-gray-600'}} hover:bg-green-100 border-[1px] rounded-lg h-full w-full flex flex-col py-5 px-6 justify-between relative">
+                    class="{{ $loc->id == $selected_location_id ? 'border-indigo-600 bg-indigo-50' : 'border-gray-600'}} hover:bg-indigo-100 border-[1px] rounded-lg h-full w-full flex flex-col py-5 px-6 justify-between relative">
                     <div class="flex flex-col">
                         <div class="font-bold">
                             {{ $user->username }}

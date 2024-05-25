@@ -1,9 +1,9 @@
 <div class="w-full p-10 box-border flex flex-col justify-between items-center gap-4">
-    <h1 class="text-4xl text-green-500 font-bold self-start">Edit Product</h1>
+    <h1 class="text-4xl text-indigo-500 font-bold self-start">Edit Product</h1>
     <div class="w-full grid grid-cols-5 gap-4">
         @foreach ($images as $index => $image)
             <label
-                class="relative group w-36 h-36 border-2 border-dashed rounded-lg text-sm font-semibold cursor-pointer flex flex-col justify-center items-center text-gray-500 hover:text-green-500 hover:border-green-500">
+                class="relative group w-36 h-36 border-2 border-dashed rounded-lg text-sm font-semibold cursor-pointer flex flex-col justify-center items-center text-gray-500 hover:text-indigo-500 hover:border-indigo-500">
                 <input wire:model="images.{{ $index }}" name="images[{{ $index }}]" type="file"
                        accept="image/*" class="hidden">
                 @if ($index < count($product_images) && $product_images[$index] && $image==null)
@@ -62,7 +62,7 @@
             </div>
         </div>
         <button wire:loading.attr='disabled' wire:click='save' class="px-10 py-2 text-white
-            font-semibold bg-green-500 rounded-md disabled:cursor-not-allowed"> Save
+            font-semibold bg-indigo-500 rounded-md disabled:cursor-not-allowed"> Save
         </button>
     </div>
 

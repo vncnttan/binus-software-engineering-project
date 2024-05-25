@@ -46,7 +46,7 @@
                                     {{ $t->status == 'Pending' ? 'bg-amber-300 text-amber-600' : '' }}
                                     {{ $t->status == 'Shipping' ? 'bg-blue-300 text-blue-600' : '' }}
                                     {{ $t->status == 'Rejected' ? 'bg-red-300 text-red-600' : '' }}
-                                    {{ $t->status == 'Completed' ? 'bg-green-300 text-green-600' : '' }}
+                                    {{ $t->status == 'Completed' ? 'bg-indigo-300 text-indigo-600' : '' }}
                                      px-2 rounded-sm">
                                     {{ $t->status }}
                                 </div>
@@ -101,7 +101,7 @@
                             <div class="w-full text-end">
                                 <div class="justify-end flex flex-row gap-2">
                                     <a href="/product-detail/{{ $t->product->id }}"
-                                        class="ml-4 bg-white hover:bg-gray-100 border-[1px] text-green-600 border-green-600 py-2 px-12 rounded-md font-bold">
+                                        class="ml-4 bg-white hover:bg-gray-100 border-[1px] text-indigo-600 border-indigo-600 py-2 px-12 rounded-md font-bold">
                                         See Reviews
                                     </a>
                                 </div>

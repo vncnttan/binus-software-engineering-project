@@ -59,7 +59,7 @@
                                         Cheapest price only on {{ $stores[0]->name }}!
                                     </div>
                                     <button
-                                        class="py-1 px-4 text-sm font-bold text-green-600 border-green-600 border-[1px] rounded-md">
+                                        class="py-1 px-4 text-sm font-bold text-indigo-600 border-indigo-600 border-[1px] rounded-md">
                                         Check now
                                     </button>
                                 </div>
@@ -76,7 +76,7 @@
                                 </div>
                                 <a href="/merchant/{{ $stores[0]->id }}/products">
                                     <div
-                                        class="w-36 h-80 md:w-48 md:h-80 rounded-md border-[1px] leading-4 border-gray-500 gap-2 px-6  border-opacity-50 flex flex-col justify-center place-items-center text-center font-bold text-green-600">
+                                        class="w-36 h-80 md:w-48 md:h-80 rounded-md border-[1px] leading-4 border-gray-500 gap-2 px-6  border-opacity-50 flex flex-col justify-center place-items-center text-center font-bold text-indigo-600">
                                         <div
                                             class="rounded-full shadow-card p-2 border-black border-opacity-30 border-[1px]">
                                             <svg class=" w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -168,11 +168,11 @@
             document.getElementById("store-result").hidden = selected !== "Store"
 
             if (selected === "Product") {
-                updateClasses("product-button", ["border-green-600", "text-green-600", "border-b-2"], "add");
-                updateClasses("store-button", ["border-green-600", "text-green-600", "border-b-2"], "remove");
+                updateClasses("product-button", ["border-indigo-600", "text-indigo-600", "border-b-2"], "add");
+                updateClasses("store-button", ["border-indigo-600", "text-indigo-600", "border-b-2"], "remove");
             } else {
-                updateClasses("product-button", ["border-green-600", "text-green-600", "border-b-2"], "remove");
-                updateClasses("store-button", ["border-green-600", "text-green-600", "border-b-2"], "add");
+                updateClasses("product-button", ["border-indigo-600", "text-indigo-600", "border-b-2"], "remove");
+                updateClasses("store-button", ["border-indigo-600", "text-indigo-600", "border-b-2"], "add");
             }
         }
 

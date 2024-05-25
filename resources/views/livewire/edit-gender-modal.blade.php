@@ -16,17 +16,17 @@
                 </button>
                 <button type="button"
                     wire:click="$set('gender', 'Female')"
-                    class="w-full px-4 py-2 border {{ $gender == 'Female' ? '!border-pink-500 !bg-pink-500 text-white' : '!border-pink-500 !text-pink-500' }} hover:!bg-pink-500 hover:text-white ">
+                    class="w-full px-4 py-2 border {{ $gender == 'Female' ? '!border-indigo-500 !bg-indigo-500 text-white' : '!border-indigo-500 !text-indigo-500' }} hover:!bg-indigo-500 hover:text-white ">
                     Female
                 </button>
                 <button type="button"
                     wire:click="$set('gender', 'Other')"
-                    class="w-full px-4 py-2 border {{ $gender == 'Other' ? '!border-green-500 !bg-green-500 text-white' : '!border-green-500 !text-green-500' }} hover:!bg-green-500 hover:text-white ">
+                    class="w-full px-4 py-2 border {{ $gender == 'Other' ? '!border-indigo-500 !bg-indigo-500 text-white' : '!border-indigo-500 !text-indigo-500' }} hover:!bg-indigo-500 hover:text-white ">
                     Other
                 </button>
             </div>
         </div>
         <button
-            class="w-full text-xl text-white font-semibold bg-green-500 rounded-lg flex justify-center p-2 box-border">Save</button>
+            class="w-full text-xl text-white font-semibold bg-indigo-500 rounded-lg flex justify-center p-2 box-border">Save</button>
     </form>
 </div>

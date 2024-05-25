@@ -60,7 +60,7 @@
                                     Reject Order
                                 </button>
                                 <button
-                                    class="bg-green-600 max-w-md flex-grow hover:bg-green-700 py-2 px-4 text-white rounded-md font-bold"
+                                    class="bg-indigo-600 max-w-md flex-grow hover:bg-indigo-700 py-2 px-4 text-white rounded-md font-bold"
                                     onclick="completeOrder('{{$pending->transaction_id}}' , '{{$pending->variant_id}}', '{{$pending->product_id}}')">
                                     Complete Order
                                 </button>
