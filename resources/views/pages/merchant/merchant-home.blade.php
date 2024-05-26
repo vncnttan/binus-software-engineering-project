@@ -5,7 +5,7 @@
 @section('content')
     <div class="w-full h-full" id="merchant-home-screen">
         <div class="w-full p-10 flex flex-col h-fit gap-4">
-            <div class="bg-black p-8 rounded-md bg-opacity-20 flex flex-col gap-4">
+            <div class="bg-black p-8 rounded-md bg-opacity-40 flex flex-col gap-4">
                 <h1 class="text-white font-bold text-2xl">
                     Pending Orders
                 </h1>
@@ -70,7 +70,7 @@
                 </div>
             </div>
 
-            <div class="bg-black p-8 rounded-md bg-opacity-30 flex flex-col gap-4">
+            <div class="bg-black p-8 rounded-md bg-opacity-40 flex flex-col gap-4">
                 <h1 class="text-white font-bold text-2xl">
                     Shipped Orders
                 </h1>
@@ -148,11 +148,6 @@
         </div>
     </div>
     <style>
-        #merchant-home-screen {
-            background-image: url('https://assets.tokopedia.net/assets-tokopedia-lite/v2/icarus/kratos/0e750897.png');
-            height: calc(100vh - 112px);
-            background-repeat: no-repeat;
-        }
     </style>
     <script>
 

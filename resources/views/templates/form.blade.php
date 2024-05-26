@@ -12,7 +12,7 @@
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
     <title>@yield('title')</title>
-    <link rel="icon" type="image/x-icon" sizes="144x144" href="{{ url(asset('/assets/logo/favicon-notif.ico')) }}"></head>
+    <link rel="icon" type="image/x-icon" sizes="144x144" href="{{ url(asset('/assets/logo/logo.png')) }}"></head>
 
 <body class="bg-white text-black">
 

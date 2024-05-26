@@ -28,7 +28,7 @@
                         @endforeach
                         @if($stores->count() < 1)
                             <div class="flex flex-row gap-2">
-                                <img alt="No Following" src="{{ asset('assets/general/no-following.png') }}"/>
+                                <img alt="No Following" src="{{ asset('assets/general/no-following.png') }}" height="200" width="200"/>
                                 <div class="flex flex-col gap-1">
                                     <h1 class="text-xl font-bold ">No Following</h1>
                                     <div class="text-gray-500">
