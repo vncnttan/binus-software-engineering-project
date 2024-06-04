@@ -23,6 +23,7 @@ return new class extends Migration
             $table->uuid("shipment_id");
             $table->string("promo_name")->nullable();
             $table->integer("discount")->nullable();
+            $table->string("image")->nullable();
             $table->integer("total_paid");
             $table->timestamps();
             $table->foreign("transaction_id")->references("id")->on("transaction_headers")->onUpdate("CASCADE")->onDelete("CASCADE");

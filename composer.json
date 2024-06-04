@@ -17,8 +17,10 @@
         "mbezhanov/faker-provider-collection": "^2.0",
         "pusher/pusher-php-server": "~7.0",
         "spatie/laravel-csp": "^2.8",
+        "unsplash/unsplash": "^3.2",
         "wire-elements/modal": "^1.0",
-        "yoeunes/toastr": "^2.3"
+        "yoeunes/toastr": "^2.3",
+        "ext-curl": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",

@@ -99,7 +99,6 @@
                 </div>
                 <span id="subtotalDisplay"></span>
             </div>
-
         </div>
 
         <div class="md:w-96 w-full h-fit shadow-card mt-12 flex flex-col gap-4 rounded-md">
@@ -126,10 +125,16 @@
                     <a href="https://www.tokopedia.com/terms" class="text-indigo-500">terms and conditions</a>
                 </div>
 
+                <div class="mb-3 flex flex-col gap-2">
+                    <label for="formFile" class="text-llg font-bold">Payment Receipt</label>
+                    <input class="cursor-pointer" type="file" name="image" id="formFile" >
+                </div>
+
                 <button class="bg-indigo-600 py-2 text-white font-bold rounded-md" onclick="proceedTransaction()">
                     Proceed Transaction
                 </button>
             </div>
+
         </div>
     </div>
     <div class="w-full flex border-t-[1px] border-gray-400">

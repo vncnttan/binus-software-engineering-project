@@ -18,22 +18,47 @@ if (!function_exists('formatPrice')) {
 }
 
 if (!function_exists('getRandomImageURL')) {
+
     function getRandomImageURL(): string
     {
-        $categories = [
-            'Shoes',
-            'Watch',
-            'Jeans',
-            'Clothes',
-            'Bag',
-            'Hat',
-            'Glasses',
-            'Shirt',
-            'Pants',
-            'Jacket'
-        ];
-//         $response = Http::get('https://source.unsplash.com/random/?Product&'.rand(1, 10));
-        return 'https://source.unsplash.com/random/?'.$categories[rand(0, 9)].'&'.rand(1, 10);
+        $categories = ['shoes', 'watch', 'jeans', 'clothes', 'bag', 'hat', 'glasses', 'shirt', 'pants', 'jacket'];
+        $category = $categories[rand(0, 9)];
+
+        $url = "https://api.unsplash.com/photos/random?query=$category&client_id=cd18WBfFzxuHvI04oZLoj3dA5UVDzSHVusPTdMrLnVg";
+        $response = Http::get($url);
+
+        if ($response->successful()) {
+            $data = $response->json();
+            return $data['urls']['regular'];
+        }
+
+        return 'https://via.placeholder.com/300?text=No+Image+Found';
+
+//        $chosenCategory = $categories[rand(0, 9)];
+//
+//        // Unsplash API endpoint (requires an access key)
+//        $baseUrl = "https://api.unsplash.com/photos/random?";
+//
+//        // Replace with your Unsplash access key
+//        $accessKey = "cd18WBfFzxuHvI04oZLoj3dA5UVDzSHVusPTdMrLnVg";
+//
+//        $url = $baseUrl . "query=" . urlencode($chosenCategory) . "&orientation=portrait";
+//
+//        // Use cURL to make the API call with access key
+//        $curl = curl_init($url);
+//        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+//        curl_setopt($curl, CURLOPT_HTTPHEADER, array("Authorization: Client-ID " . $accessKey));
+//        $response = curl_exec($curl);
+//        curl_close($curl);
+//
+//        // Decode the JSON response and extract the image URL
+//        $data = json_decode($response);
+//        if (isset($data) && isset($data->urls) && isset($data->urls->regular)) {
+//            return $data->urls->regular;
+//        } else {
+//            // Handle potential errors (no results found, API issues)
+//            return "https://via.placeholder.com/300?text=No+Image+Found"; // Placeholder image
+//        }
     }
 }
 

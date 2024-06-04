@@ -42,7 +42,6 @@ class TransactionDetailController extends Controller
             return redirect()->back()->withErrors($validate->errors())->withInput();
         }
 
-
         foreach ($details as $detail) {
             if (!Shipment::find($detail['shipmentId'])) {
                 toastr()->error('Shipment not found');
@@ -85,6 +84,14 @@ class TransactionDetailController extends Controller
                                             );
             $transactionDetail->discount = getMaximumDiscount($detail["productId"]);
             $transactionDetail->quantity = $cart->quantity;
+
+            if ($request->hasFile('image')) {
+                $image = $request->file('image');
+                $imageName = time() . '-' . $image->getClientOriginalName();
+                $image->move(public_path('storage/transaction/receipt'), $imageName);
+                $transactionDetail->image = $imageName;
+            }
+
             $transactionDetail->save();
 
             $variant = ProductVariant::where('id', $detail["variantId"])->first();
