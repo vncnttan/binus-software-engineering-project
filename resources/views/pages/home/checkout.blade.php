@@ -149,19 +149,22 @@
         let user_id = "{{ $user->id }}";
 
         function proceedTransaction() {
-            let data = {
-                location_id: $selected_location.id,
-                user_id: user_id,
-                shipment_ids: cartSelections,
-                _token: "{{ csrf_token() }}"
-            };
+            const imageInput = document.getElementById('formFile');
+            const imageFile = imageInput.files[0];
+
+            const formData = new FormData();
+            formData.append('location_id', $selected_location.id);
+            formData.append('user_id', user_id);
+            formData.append('shipment_ids', JSON.stringify(cartSelections));
+            formData.append('_token', "{{ csrf_token() }}");
+            formData.append('image', imageFile);
+
+            console.log(formData)
+            console.log(cartSelections)
 
             fetch('/transaction', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(data),
+                body: formData,
             })
                 .then(response => {
                     if (!response.ok) {
@@ -179,7 +182,7 @@
                 })
                 .catch((error) => {
                     console.error('Error:', error);
-                    location.reload();
+                    // location.reload();
                 });
         }
 

@@ -8,7 +8,11 @@ use App\Models\ProductVariant;
 use App\Models\Shipment;
 use App\Models\TransactionDetail;
 use App\Models\TransactionHeader;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
@@ -17,15 +21,15 @@ use Illuminate\Support\Str;
 class TransactionDetailController extends Controller
 {
 
-    function index()
+    function index(): Factory|View|Application
     {
         return view('pages.profile.profile-page-transaction');
     }
 
-    function addTransaction(Request $request)
+    function addTransaction(Request $request): JsonResponse|RedirectResponse
     {
         $userId = auth()->user()->id;
-        $details = $request->shipment_ids;
+        $details = json_decode($request->input('shipment_ids'), true);;
 
         $message = [
             'location_id.required' => 'Location is required',
@@ -56,7 +60,7 @@ class TransactionDetailController extends Controller
         $transactionHeader = new TransactionHeader();
         $transactionHeader->id = $transactionId;
         $transactionHeader->user_id = $userId;
-        $transactionHeader->location_id = $request->location_id;
+        $transactionHeader->location_id = $request->input('location_id');
         $transactionHeader->date = now();
         $transactionHeader->save();
 
