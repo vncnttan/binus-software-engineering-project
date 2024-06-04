@@ -157,6 +157,11 @@
             formData.append('user_id', user_id);
             formData.append('shipment_ids', JSON.stringify(cartSelections));
             formData.append('_token', "{{ csrf_token() }}");
+
+            if(imageFile === undefined) {
+                alert('Please upload your payment receipt');
+                return;
+            }
             formData.append('image', imageFile);
 
             console.log(formData)
