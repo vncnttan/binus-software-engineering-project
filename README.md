@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About tokoNJedia
+## About beeThrift
 
 How to run this project:
 - Clone this project
@@ -20,10 +20,9 @@ How to run this project:
 - Run `php artisan serve`
 - Open `localhost:8000
 
-TokoNJedia
-Laravel Core Training BP :]
-
-Special thanks:
-- CX23-1 Riccdoug
-
-"# binus-software-engineering-project" 
+Software Engineering:
+- 2602110986 - Anthonio Obert Lais
+- 2602133522 - Batari Cyrilla Jagaddhita
+- 2602118635 – Evelyne Wijaya
+- 2602060035 - Teresa Stefanie Sheryl
+- 2602128346 - Vincent Tanjaya
